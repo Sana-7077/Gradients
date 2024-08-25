@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial and Conic</title>
+    <style>
+       div{
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin: 10px;
+       }
+       #rg{
+        background-image: radial-gradient(yellow,red);
+       }
+       #cg{
+        background-image:conic-gradient(maroon,blue,brown,red);
+       }
+       #rg1{
+        background-image: repeating-radial-gradient(circle,yellow 40%,red 60% );
+       }
+       #cg1{
+        background-image: repeating-conic-gradient(maroon 20%,blue 30%,brown 20%,red 40%);
+       }
+       div h3{
+        text-align: center;
+        margin-top: 320px;
+       }
+    </style>
+</head>
+<body>
+    <div id="rg"><h3>Radial</h3></div>
+    <div id="cg"><h3>Conic</h3></div>
+    <div id="rg1"><h3>Repeating Radial</h3></div>
+    <div id="cg1"><h3> Repeating Conic</h3></div>
+</body>
+</html>
